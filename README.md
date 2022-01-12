@@ -2,10 +2,16 @@
 
 
 
-[kubernetes中文社区](https://www.kubernetes.org.cn)
+{% embed url="https://kubernetes.io" %}
+
+{% embed url="https://www.cncf.io" %}
+
+
 
 {% embed url="https://jimmysong.io" %}
-:thumbsup:
-{% endembed %}
 
-[云原生开源工具、软件、教程大全](https://jimmysong.io/awesome-cloud-native/)
+{% embed url="https://www.kubernetes.org.cn" %}
+
+{% embed url="https://cloud.redhat.com" %}
+
+{% embed url="https://cloud-atlas.readthedocs.io/zh_CN/latest/index.html#" %}
