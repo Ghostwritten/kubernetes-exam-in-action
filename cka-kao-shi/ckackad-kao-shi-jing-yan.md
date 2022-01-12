@@ -1,37 +1,5 @@
 # CKA、CKAD考试经验
 
-#### 文章目录
-
-*
-  * [1.证书简介](broken-reference)
-  * [2.考试报名](broken-reference)
-  * [中文监控报名流程](broken-reference)
-  * [3.报名优惠:](broken-reference)
-  * [4.备考](broken-reference)
-  * [5.考前检查及考试环境](broken-reference)
-  *
-    * [1. 考试形式:](broken-reference)
-    * [2.考试环境:](broken-reference)
-    * [3.考试时间及题目:](broken-reference)
-    * [5. 选择考试时间:](broken-reference)
-    * [6. 电脑要求:](broken-reference)
-    * [7.考试前考官检查:](broken-reference)
-    * [8.考试的界面:](broken-reference)
-    * [9.考试过程:](broken-reference)
-  * [6.考试心得](broken-reference)
-  *
-    * [1.考试难度](broken-reference)
-    * [2.kubectl自动补全](broken-reference)
-    * [3.使用考试环境提供的记事本](broken-reference)
-    * [4.使用–dry-run生成yaml](broken-reference)
-    * [5.浏览器收藏夹](broken-reference)
-    * [6.vim编辑器](broken-reference)
-    * [7.web终端中的复制粘贴](broken-reference)
-    * [8.Command, Command, Command](broken-reference)
-* [**云原生圣经**](https://ghostwritten.blog.csdn.net/article/details/108562082)
-
-***
-
 ### 1.证书简介 <a href="#1_5" id="1_5"></a>
 
 `CKA`: `Kubernetes`管理员认证（CKA）旨在确保认证持有者具备履行Kubernetes管理员职责的技能，知识和能力。 CKA认证可帮助经过认证的管理员在就业市场中快速建立自己的信誉和价值，并能帮助公司更快地雇用高质量的团队来支持他们的发展

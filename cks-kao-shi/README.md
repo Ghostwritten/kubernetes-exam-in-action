@@ -1,45 +1,5 @@
 # CKS考试
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210108154538509.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70#pic\_center)
-
-***
-
-#### 文章目录
-
-*
-  * [1. 要求](broken-reference)
-  * [2. 考点内容](broken-reference)
-  *
-    * [2.1 集群安装：10%](broken-reference)
-    * [2.2 集群强化：15%](broken-reference)
-    * [2.3 系统强化：15%](broken-reference)
-    * [2.4 微服务漏洞最小化：20%](broken-reference)
-    * [2.5 供应链安全：20%](broken-reference)
-    * [2.6 监控、日志记录和运行时安全：20%](broken-reference)
-  * [3. 需要掌握内容](broken-reference)
-  *
-    * [3.1 群集设置 10%](broken-reference)
-    * [3.2 群集强化 15%](broken-reference)
-    * [3.3 系统强化 15%](broken-reference)
-    * [3.4 最小化微服务漏洞 20%](broken-reference)
-    * [3.5 供应链安全 20%](broken-reference)
-    * [3.6 监控、审计和runtime 20%](broken-reference)
-  * [4. 考试资料](broken-reference)
-  * [5. 考试命令](broken-reference)
-  *
-    * [NetworkPolicy](broken-reference)
-    * [Dashboard](broken-reference)
-    * [Secure Ingress](broken-reference)
-    * [Node Metadata](broken-reference)
-    * [CIS Benchmarks](broken-reference)
-    * [Verify](broken-reference)
-    * [Restrict API Access](broken-reference)
-    * [ServiceAccounts](broken-reference)
-    * [RBAC](broken-reference)
-    * [Upgrade Kubernetes](broken-reference)
-    * [securityContext与podsecurityPolicies](broken-reference)
-    * [seccomp and apparmor](broken-reference)
-
 ### 1. 要求 <a href="#1__5" id="1__5"></a>
 
 考试模式：线上考试
