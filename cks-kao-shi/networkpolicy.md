@@ -18,22 +18,32 @@
 ### 1. 集群配置网络策略 <a href="#1__10" id="1__10"></a>
 
 k8s官网： [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413113025209.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413113116858.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413113145835.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021041311341979.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413113513415.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413113549162.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021041311404622.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+
+![](https://img-blog.csdnimg.cn/20210413113116858.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210413113145835.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/2021041311341979.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210413113513415.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210413113549162.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/2021041311404622.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021041311401950.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413114213734.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 2. Practice - Frontend to Backend traffic <a href="#2_practice__frontend_to_backend_traffic_23" id="2_practice__frontend_to_backend_traffic_23"></a>
+### 2. Frontend to Backend traffic <a href="#2_practice__frontend_to_backend_traffic_23" id="2_practice__frontend_to_backend_traffic_23"></a>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210413114444451.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210420144613907.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+\
+
+
+![](https://img-blog.csdnimg.cn/20210413114444451.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210420144613907.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ```
 root@master:~# k run frontend --image=nginx
@@ -255,7 +265,7 @@ Commercial support is available at
 100   612  100   612    0     0   298k      0 --:--:-- --:--:-- --:--:--  298k
 ```
 
-### 3. Practice - Backend to Database traffic <a href="#3_practice__backend_to_database_traffic_248" id="3_practice__backend_to_database_traffic_248"></a>
+### 3. Backend to Database traffic <a href="#3_practice__backend_to_database_traffic_248" id="3_practice__backend_to_database_traffic_248"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210420145522837.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

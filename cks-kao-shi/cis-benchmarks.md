@@ -8,21 +8,10 @@
   * [3. 容器测试](broken-reference)
   * [4. 注意事项](broken-reference)
 
-***
-
-* [Kubernetes安全专家认证 (CKS)考试动员](https://ghostwritten.blog.csdn.net/article/details/112358241)
-* [云原生圣经](https://ghostwritten.blog.csdn.net/article/details/108562082)
-
-***
-
 ### 1. 介绍 <a href="#1__9" id="1__9"></a>
 
 Kube-Bench是一款针对Kubernete的安全检测工具，从本质上来说，Kube-Bench是一个基于Go开发的应用程序，它可以帮助研究人员对部署的Kubernete进行安全检测，安全检测原则遵循[CIS Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/)。\
 测试规则需要通过YAML文件进行配置，因此我们可以轻松更新该工具的测试规则。
-
-\
-\
-
 
 ![](https://img-blog.csdnimg.cn/20210422113251111.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -49,6 +38,8 @@ kube-bench --config-dir /data/software/kube-bench/cfg --config /data/software/ku
 
 参考链接：\
 [https://github.com/aquasecurity/kube-bench#running-inside-a-container](https://github.com/aquasecurity/kube-bench#running-inside-a-container)\
+
+
 检查master节点的指标内容
 
 ```

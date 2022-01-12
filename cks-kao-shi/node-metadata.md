@@ -7,13 +7,6 @@
   * [2. Practice: Access Node Metadata](broken-reference)
   * [3. Practice: Protect Node Metadata via NetworkPolicy](broken-reference)
 
-***
-
-* [Kubernetes安全专家认证 (CKS)考试动员](https://ghostwritten.blog.csdn.net/article/details/112358241)
-* [云原生圣经](https://ghostwritten.blog.csdn.net/article/details/108562082)
-
-***
-
 ### 1. 介绍 <a href="#1__8" id="1__8"></a>
 
 \
@@ -26,7 +19,7 @@
 
 ![](https://img-blog.csdnimg.cn/20210421185832634.png)
 
-### 2. Practice: Access Node Metadata <a href="#2_practice_access_node_metadata_12" id="2_practice_access_node_metadata_12"></a>
+### 2. Access Node Metadata <a href="#2_practice_access_node_metadata_12" id="2_practice_access_node_metadata_12"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021042211194795.png)
 
@@ -52,7 +45,7 @@ root@nginx:/# curl "http://metadata.google.internal/computeMetadata/v1/instance/
 
 ```
 
-### 3. Practice: Protect Node Metadata via NetworkPolicy <a href="#3_practice_protect_node_metadata_via_networkpolicy_36" id="3_practice_protect_node_metadata_via_networkpolicy_36"></a>
+### 3. Protect Node Metadata via NetworkPolicy <a href="#3_practice_protect_node_metadata_via_networkpolicy_36" id="3_practice_protect_node_metadata_via_networkpolicy_36"></a>
 
 ```
 root@master:~/cks/metadata# cat deny.yaml

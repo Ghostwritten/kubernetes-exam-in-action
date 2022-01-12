@@ -7,8 +7,6 @@
   * [2. Practice - create an Ingress](broken-reference)
   * [3. Practice - Secure an Ingress](broken-reference)
 
-***
-
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 
 \
@@ -18,7 +16,7 @@
 
 ![](https://img-blog.csdnimg.cn/20210421135426748.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 2. Practice - create an Ingress <a href="#2_practice__create_an_ingress_8" id="2_practice__create_an_ingress_8"></a>
+### 2. create an Ingress <a href="#2_practice__create_an_ingress_8" id="2_practice__create_an_ingress_8"></a>
 
 \
 部署链接：[https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal](https://kubernetes.github.io/ingress-nginx/deploy/#bare-metal)
@@ -137,7 +135,7 @@ root@master:~/cks/nginx-ingress# curl  http://192.168.211.40:31459/service2
 
 ```
 
-### 3. Practice - Secure an Ingress <a href="#3_practice__secure_an_ingress_125" id="3_practice__secure_an_ingress_125"></a>
+### 3. Secure an Ingress <a href="#3_practice__secure_an_ingress_125" id="3_practice__secure_an_ingress_125"></a>
 
 参考链接：[https://kubernetes.io/docs/concepts/services-networking/ingress/#tls](https://kubernetes.io/docs/concepts/services-networking/ingress/#tls)\
 

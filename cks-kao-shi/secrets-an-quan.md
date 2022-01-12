@@ -1,4 +1,4 @@
-# Secrets
+# Secrets 安全
 
 #### 文章目录
 
@@ -17,13 +17,19 @@
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427143342989.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427143645951.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427143714572.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+\
+
+
+![](https://img-blog.csdnimg.cn/20210427143645951.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210427143714572.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ### 2. Create Simple Secret Scenario <a href="#2_create_simple_secret_scenario_12" id="2_create_simple_secret_scenario_12"></a>
 
 参考链接：[https://kubernetes.io/zh/docs/concepts/configuration/secret/#using-secrets](https://kubernetes.io/zh/docs/concepts/configuration/secret/#using-secrets)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427143804876.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+
+![](https://img-blog.csdnimg.cn/20210427143804876.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ```
 root@master:~# k create secret generic secret1 --from-literal user=admin
@@ -142,7 +148,9 @@ admin
 
 参考链接：\
 [https://kubernetes.io/zh/docs/tasks/administer-cluster/configure-upgrade-etcd/#%E5%AE%89%E5%85%A8%E9%80%9A%E4%BF%A1](https://kubernetes.io/zh/docs/tasks/administer-cluster/configure-upgrade-etcd/#%E5%AE%89%E5%85%A8%E9%80%9A%E4%BF%A1)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427155235982.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+
+![](https://img-blog.csdnimg.cn/20210427155235982.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ```
 root@master:~# ETCDCTL_API=3 etcdctl --endpoints https://192.168.211.40:2379   --cert /etc/kubernetes/pki/etcd/server.crt --key /etc/kubernetes/pki/etcd/server.key --cacert /etc/kubernetes/pki/etcd/ca.crt endpoint health
@@ -177,14 +185,18 @@ pas12345678Opaque"
 
 参考链接：\
 [https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/](https://kubernetes.io/docs/tasks/administer-cluster/encrypt-data/)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427161639228.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427162824572.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+\
+
+
+![](https://img-blog.csdnimg.cn/20210427161639228.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210427162824572.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427163026455.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427163136377.png?xshadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 6. Practice - Encrypt ETCD <a href="#6_practice__encrypt_etcd_173" id="6_practice__encrypt_etcd_173"></a>
+### 6. Encrypt ETCD <a href="#6_practice__encrypt_etcd_173" id="6_practice__encrypt_etcd_173"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427163838875.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

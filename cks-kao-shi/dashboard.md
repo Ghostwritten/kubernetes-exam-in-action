@@ -37,7 +37,7 @@
 
 ![](https://img-blog.csdnimg.cn/20210421103849654.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 2. Practice -Install Dashboard <a href="#2_practice_install_dashboard_14" id="2_practice_install_dashboard_14"></a>
+### 2. 安装UI界面 <a href="#2_practice_install_dashboard_14" id="2_practice_install_dashboard_14"></a>
 
 [https://github.com/kubernetes/dashboard](https://github.com/kubernetes/dashboard)
 
@@ -141,7 +141,7 @@ kubernetes-dashboard        NodePort    10.99.150.161   <none>        9090:30613
 访问:http://192.168.211.40:30613/\
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021042111150055.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 3. Practice - RBAC for the Dashboard <a href="#3_practice__rbac_for_the_dashboard_117" id="3_practice__rbac_for_the_dashboard_117"></a>
+### 3. RBAC for the Dashboard <a href="#3_practice__rbac_for_the_dashboard_117" id="3_practice__rbac_for_the_dashboard_117"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210421112106475.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

@@ -47,7 +47,7 @@
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425160302235.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425160413230.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 2. Practice - Role and Rolebinding <a href="#2_practice__role_and_rolebinding_19" id="2_practice__role_and_rolebinding_19"></a>
+### 2. Practice -Role and Rolebinding <a href="#2_practice__role_and_rolebinding_19" id="2_practice__role_and_rolebinding_19"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425160515688.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -120,7 +120,7 @@ root@master:~/k8slib# k -n blue auth can-i get pods --as jane
 no
 ```
 
-### 3. Practice - ClusterRole and ClusterRoleBinding <a href="#3_practice__clusterrole_and_clusterrolebinding_91" id="3_practice__clusterrole_and_clusterrolebinding_91"></a>
+### 3. ClusterRole and ClusterRoleBinding <a href="#3_practice__clusterrole_and_clusterrolebinding_91" id="3_practice__clusterrole_and_clusterrolebinding_91"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425161726755.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -162,7 +162,7 @@ yes
 
 ![](https://img-blog.csdnimg.cn/20210425162515399.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 5. Practice - CertificateSigningRequests <a href="#5_practice__certificatesigningrequests_122" id="5_practice__certificatesigningrequests_122"></a>
+### 5. CertificateSigningRequests <a href="#5_practice__certificatesigningrequests_122" id="5_practice__certificatesigningrequests_122"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425163036665.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

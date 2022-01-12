@@ -7,23 +7,13 @@
   * [2. Practice - Download and verify K8s release](broken-reference)
   * [3. Practice - Verify apiserver binary running in our cluster](broken-reference)
 
-***
-
-* [Kubernetes安全专家认证 (CKS)考试动员](https://ghostwritten.blog.csdn.net/article/details/112358241)
-* [云原生圣经](https://ghostwritten.blog.csdn.net/article/details/108562082)
-
-***
-
 ### 1. 介绍 <a href="#1__8" id="1__8"></a>
-
-\
-
 
 ![](https://img-blog.csdnimg.cn/20210422163352933.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![](https://img-blog.csdnimg.cn/20210422163449691.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 2. Practice - Download and verify K8s release <a href="#2_practice__download_and_verify_k8s_release_11" id="2_practice__download_and_verify_k8s_release_11"></a>
+### 2. Download and verify K8s release <a href="#2_practice__download_and_verify_k8s_release_11" id="2_practice__download_and_verify_k8s_release_11"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210422163505874.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -63,7 +53,7 @@ root@master:~/k8slib# cat compare | uniq   #确认二者相同
 b93857e8c38e433f3edd1ea5727c64b79e1898bcfb8b31a823024c06c2dc66b047482f28d8e89db5c1aae99532a7820dc0212b2aa5a51de3b9c94aa88514b372
 ```
 
-### 3. Practice - Verify apiserver binary running in our cluster <a href="#3_practice__verify_apiserver_binary_running_in_our_cluster_46" id="3_practice__verify_apiserver_binary_running_in_our_cluster_46"></a>
+### 3. 验证 apiserver 二进制文件 <a href="#3_practice__verify_apiserver_binary_running_in_our_cluster_46" id="3_practice__verify_apiserver_binary_running_in_our_cluster_46"></a>
 
 ```
 root@master:~/k8slib# ls

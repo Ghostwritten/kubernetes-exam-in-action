@@ -15,17 +15,25 @@
 
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425185449694.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425185621584.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+\
+
+
+![](https://img-blog.csdnimg.cn/20210425185449694.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210425185621584.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425185743944.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425185845510.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 2. Practice - Anonymous Access <a href="#2_practice__anonymous_access_12" id="2_practice__anonymous_access_12"></a>
+### 2. Anonymous Access <a href="#2_practice__anonymous_access_12" id="2_practice__anonymous_access_12"></a>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425185956297.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425190008318.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+\
+
+
+![](https://img-blog.csdnimg.cn/20210425185956297.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210425190008318.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ```
 root@master:~/cks/serviceaccount# curl https://localhost:6443
@@ -91,11 +99,17 @@ root@master:~/cks/serviceaccount# curl https://localhost:6443 -k
 }
 ```
 
-### 3. Practice - Insecure Access <a href="#3_practice__insecure_access_79" id="3_practice__insecure_access_79"></a>
+### 3. Insecure Access <a href="#3_practice__insecure_access_79" id="3_practice__insecure_access_79"></a>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425194521961.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425194710926.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425194805223.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+\
+\
+
+
+![](https://img-blog.csdnimg.cn/20210425194521961.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210425194710926.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210425194805223.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ```
 root@master:~/cks/serviceaccount# curl https://localhost:6443 -k
@@ -141,7 +155,7 @@ kube-apiserver-master                      1/1     Running   0          3s
 root@master:~# curl http://localhost:8080
 ```
 
-### 4. Practice - Manual API Request <a href="#4_practice__manual_api_request_128" id="4_practice__manual_api_request_128"></a>
+### 4. Manual API Request <a href="#4_practice__manual_api_request_128" id="4_practice__manual_api_request_128"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210426141859678.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -149,7 +163,7 @@ root@master:~# curl http://localhost:8080
 root@master:/etc/kubernetes/pki# curl https://192.168.211.40:6443 --cacert ca --cert  ca.crt --key ca.key
 ```
 
-### 5. Practice - External Apiserver Access <a href="#5_practice__external_apiserver_access_134" id="5_practice__external_apiserver_access_134"></a>
+### 5. External Apiserver Access <a href="#5_practice__external_apiserver_access_134" id="5_practice__external_apiserver_access_134"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210426143209717.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -214,7 +228,7 @@ kube-system       Active   19h
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210426150839360.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210426151051581.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-### 7. Practice - Verify NodeRestriction <a href="#7_practice__verify_noderestriction_195" id="7_practice__verify_noderestriction_195"></a>
+### 7. Verify NodeRestriction <a href="#7_practice__verify_noderestriction_195" id="7_practice__verify_noderestriction_195"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210426151124766.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
