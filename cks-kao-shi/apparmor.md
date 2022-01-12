@@ -1,29 +1,12 @@
-# apparmor
-
-#### 文章目录
-
-*
-  * [1. apparmor 介绍](broken-reference)
-  * [2. 准备](broken-reference)
-  *
-    * [2.1 Kubernetes & docker版本](broken-reference)
-    * [2.2 内核模块](broken-reference)
-    * [2.3 节点配置文件加载](broken-reference)
-    * [2.4 kubelet版本](broken-reference)
-  * [3. AppArmor 配置文件](broken-reference)
-  * [4. Practice - AppArmor for curl](broken-reference)
-  * [5. Practice - AppArmor for Docker Nginx](broken-reference)
-  * [6. Practice - AppArmor for Kubernetes Nginx](broken-reference)
-
-***
+# Apparmor
 
 [https://kubernetes.io/zh/docs/tutorials/clusters/apparmor/](https://kubernetes.io/zh/docs/tutorials/clusters/apparmor/)\
 [https://sysdig.com/blog/manage-apparmor-profiles-in-kubernetes-with-kube-apparmor-manager/](https://sysdig.com/blog/manage-apparmor-profiles-in-kubernetes-with-kube-apparmor-manager/)
 
 ***
 
-\
-\
+### 1.介绍
+
 \
 了解 Kube-apparmor-manager 如何帮助您管理 Kubernetes 上的 AppArmor 配置文件，以**减少集群的攻击面**。
 
@@ -161,7 +144,7 @@ error: error executing remote command: command terminated with non-zero exit cod
 
 这是一个简化的例子。
 
-### 4. Practice - AppArmor for curl <a href="#4_practice__apparmor_for_curl_134" id="4_practice__apparmor_for_curl_134"></a>
+### 4. AppArmor for curl <a href="#4_practice__apparmor_for_curl_134" id="4_practice__apparmor_for_curl_134"></a>
 
 ```
 root@master:~/cks/runtime-security# aa-status 
@@ -310,7 +293,7 @@ The document has moved
 * Connection #0 to host killer.sh left intact
 ```
 
-### 5. Practice - AppArmor for Docker Nginx <a href="#5_practice__apparmor_for_docker_nginx_283" id="5_practice__apparmor_for_docker_nginx_283"></a>
+### 5. AppArmor for Docker Nginx <a href="#5_practice__apparmor_for_docker_nginx_283" id="5_practice__apparmor_for_docker_nginx_283"></a>
 
 k8s网站： [https://v1-18.docs.kubernetes.io/zh/docs/tutorials/clusters/apparmor/](https://v1-18.docs.kubernetes.io/zh/docs/tutorials/clusters/apparmor/)\
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210525142040617.png)
@@ -458,7 +441,7 @@ root@3f067ecff95e:/# sh
 # touch /root/test
 ```
 
-### 6. Practice - AppArmor for Kubernetes Nginx <a href="#6_practice__apparmor_for_kubernetes_nginx_431" id="6_practice__apparmor_for_kubernetes_nginx_431"></a>
+### 6. AppArmor for Kubernetes Nginx <a href="#6_practice__apparmor_for_kubernetes_nginx_431" id="6_practice__apparmor_for_kubernetes_nginx_431"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210525143921470.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70) ![在这里插入图片描述](https://img-blog.csdnimg.cn/2021052514435915.png?x-oss-process=image/watermark,type\_ZmFuZ3poZW5naGVpdGk,shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

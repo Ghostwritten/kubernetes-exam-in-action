@@ -1,24 +1,7 @@
 # Container Runtime Sandboxes
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Container calls Linux Kernel](broken-reference)
-  * [3. Open Container Initiative OCI](broken-reference)
-  * [4. Crictl](broken-reference)
-  * [5. Sandbox Runtime Kata containers](broken-reference)
-  * [6. Sandbox Runtime gVisor](broken-reference)
-  * [7. Create and use RuntimeClasses](broken-reference)
-  * [8. Install and use gVisor](broken-reference)
-
-***
-
 ### 1. 介绍 <a href="#1__3" id="1__3"></a>
 
-\
-\
-\
 \
 technical overview : container and system calls\
 

@@ -1,20 +1,14 @@
 # Image build
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. 多阶段镜像构建](broken-reference)
-  * [3. 安全加固](broken-reference)
-
-***
-
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210520163346220.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210520163417705.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210520163546151.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210520163656995.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+![](https://img-blog.csdnimg.cn/20210520163346220.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210520163417705.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210520163546151.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
+
+![](https://img-blog.csdnimg.cn/20210520163656995.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ### 2. 多阶段镜像构建 <a href="#2__10" id="2__10"></a>
 

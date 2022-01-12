@@ -1,13 +1,5 @@
 # CIS Benchmarks
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. 本地测试](broken-reference)
-  * [3. 容器测试](broken-reference)
-  * [4. 注意事项](broken-reference)
-
 ### 1. 介绍 <a href="#1__9" id="1__9"></a>
 
 Kube-Bench是一款针对Kubernete的安全检测工具，从本质上来说，Kube-Bench是一个基于Go开发的应用程序，它可以帮助研究人员对部署的Kubernete进行安全检测，安全检测原则遵循[CIS Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/)。\

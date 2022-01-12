@@ -1,19 +1,8 @@
 # Secrets 安全
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Create Simple Secret Scenario](broken-reference)
-  * [3. Hack Secrets in Docker](broken-reference)
-  * [4. Hack Secrets in ETCD](broken-reference)
-  * [5. ETCD Encryption](broken-reference)
-  * [6. Practice - Encrypt ETCD](broken-reference)
-
-扩展链接：\
-[https://blog.csdn.net/xixihahalelehehe/article/details/108602320](https://blog.csdn.net/xixihahalelehehe/article/details/108602320)
-
 ### 1. 介绍 <a href="#1__5" id="1__5"></a>
+
+[secret 更多细节](https://blog.csdn.net/xixihahalelehehe/article/details/108602320)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427143342989.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

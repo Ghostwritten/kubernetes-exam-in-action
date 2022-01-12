@@ -1,19 +1,6 @@
 # ImagePolicyWebhook
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Image 摘要](broken-reference)
-  * [3. OPA注册白名单](broken-reference)
-  * [4. ImagePolicyWebhook](broken-reference)
-
 ### 1. 介绍 <a href="#1__3" id="1__3"></a>
-
-\
-\
-\
-
 
 ![](https://img-blog.csdnimg.cn/20210521162315240.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

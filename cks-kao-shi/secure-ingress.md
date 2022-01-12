@@ -1,12 +1,5 @@
 # Secure Ingress
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Practice - create an Ingress](broken-reference)
-  * [3. Practice - Secure an Ingress](broken-reference)
-
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 
 \

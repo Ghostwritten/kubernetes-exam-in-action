@@ -1,12 +1,5 @@
 # Verify Platform
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Practice - Download and verify K8s release](broken-reference)
-  * [3. Practice - Verify apiserver binary running in our cluster](broken-reference)
-
 ### 1. 介绍 <a href="#1__8" id="1__8"></a>
 
 ![](https://img-blog.csdnimg.cn/20210422163352933.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)

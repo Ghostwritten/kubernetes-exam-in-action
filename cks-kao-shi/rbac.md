@@ -1,16 +1,5 @@
 # RBAC
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Practice - Role and Rolebinding](broken-reference)
-  * [3. Practice - ClusterRole and ClusterRoleBinding](broken-reference)
-  * [4. Accounts and Users](broken-reference)
-  * [5. Practice - CertificateSigningRequests](broken-reference)
-
-***
-
 ### 1. 介绍 <a href="#1__3" id="1__3"></a>
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210425155507898.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)

@@ -1,27 +1,6 @@
 # Auditing
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Apiserver启用“Audit Logging”](broken-reference)
-  * [3. 创建Secret 审查 Audit Logs](broken-reference)
-  * [4. 创建高级审计（Audit）策略](broken-reference)
-  * [5. 审查API access 历史](broken-reference)
-
-***
-
 ### 1. 介绍 <a href="#1__5" id="1__5"></a>
-
-\
-**audit logs introduction**\
-\
-\
-\
-\
-\
-\
-
 
 ![](https://img-blog.csdnimg.cn/20210524155758892.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

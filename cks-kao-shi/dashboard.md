@@ -1,14 +1,5 @@
 # Dashboard
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Practice -Install Dashboard](broken-reference)
-  * [3. Practice - RBAC for the Dashboard](broken-reference)
-
-***
-
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 
 \

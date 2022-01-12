@@ -1,14 +1,4 @@
-# 容器安全加固(SecurityContext、StartupProbe)
-
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. 容器安全加固方法](broken-reference)
-  * [3. StartupProbe探针](broken-reference)
-  * [4. SecurityContext](broken-reference)
-
-***
+# SecurityContext and StartupProbe
 
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 

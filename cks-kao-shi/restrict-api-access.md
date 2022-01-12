@@ -1,22 +1,6 @@
 # Restrict API Access
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Practice - Anonymous Access](broken-reference)
-  * [3. Practice - Insecure Access](broken-reference)
-  * [4. Practice - Manual API Request](broken-reference)
-  * [5. Practice - External Apiserver Access](broken-reference)
-  * [6. NodeRestriction AdmissionController](broken-reference)
-  * [7. Practice - Verify NodeRestriction](broken-reference)
-
-***
-
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
-
-\
-
 
 ![](https://img-blog.csdnimg.cn/20210425185449694.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

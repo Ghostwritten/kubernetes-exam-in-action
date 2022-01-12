@@ -1,29 +1,8 @@
 # securityContext与podsecurityPolicies
 
-#### 文章目录
+### 1. 介绍 <a href="#1__10" id="1__10"></a>
 
-*
-  * [1. 介绍](broken-reference)
-  * [2. Set Container User and Group](broken-reference)
-  * [3. Force Container Non-Root](broken-reference)
-  * [4. Privileged Containers](broken-reference)
-  * [5. Create Privileged Containers](broken-reference)
-  * [6. PrivilegeEscalation](broken-reference)
-  * [7. Practice - Disable PriviledgeEscalation](broken-reference)
-  * [8. PodSecurityPolicies](broken-reference)
-  * [9. Create and enable PodSecurityPolicy](broken-reference)
-
-***
-
-* [Kubernetes【安全】1. SecurityContext安全上下文](https://blog.csdn.net/xixihahalelehehe/article/details/108539153)
-* [kubernetes【安全】2.securityContext与podsecurityPolicies配置](https://ghostwritten.blog.csdn.net/article/details/116789828)
-* [云原生圣经](https://ghostwritten.blog.csdn.net/article/details/108562082)
-
-***
-
-### 1. 介绍  <a href="#1__10" id="1__10"></a>
-
-参考链接：\
+S[ecutyContext](https://blog.csdn.net/xixihahalelehehe/article/details/108539153)\
 [https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#before-you-begin](https://kubernetes.io/docs/tasks/configure-pod-container/security-context/#before-you-begin)
 
 ![](https://img-blog.csdnimg.cn/20210514140920852.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)

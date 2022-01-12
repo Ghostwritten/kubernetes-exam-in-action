@@ -1,12 +1,5 @@
 # Node Metadata
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Practice: Access Node Metadata](broken-reference)
-  * [3. Practice: Protect Node Metadata via NetworkPolicy](broken-reference)
-
 ### 1. 介绍 <a href="#1__8" id="1__8"></a>
 
 \

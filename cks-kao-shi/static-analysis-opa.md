@@ -1,17 +1,6 @@
 # Static Analysis（OPA）
 
-#### 文章目录
-
-*
-  * [1. 介绍](broken-reference)
-  * [2. Kubesec](broken-reference)
-  * [3. OPA Conftest](broken-reference)
-  * [4. OPA Conftest for K8s YAML](broken-reference)
-  * [5. OPA Conftest for Dockerfile](broken-reference)
-
-***
-
-### 1. 介绍  <a href="#1__3" id="1__3"></a>
+### 1. 介绍 <a href="#1__3" id="1__3"></a>
 
 ![](https://img-blog.csdnimg.cn/20210521103115435.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

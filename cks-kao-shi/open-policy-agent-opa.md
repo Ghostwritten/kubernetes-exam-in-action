@@ -1,29 +1,10 @@
 # Open Policy Agent (OPA)
 
-#### 文章目录
-
-* [1. 介绍](broken-reference)
-* [2. Install OPA](broken-reference)
-* [3. Deny All Policy](broken-reference)
-* [3. Enforce Namespace Labels](broken-reference)
-* [4. Enforce Deployment replica count](broken-reference)
-* [5. The Rego 练习](broken-reference)
-
-***
-
 * [Open Policy Agent(OPA) 【1】介绍](https://blog.csdn.net/xixihahalelehehe/article/details/116905513?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164188925916780271953559%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164188925916780271953559\&biz\_id=0\&spm=1018.2226.3001.4450)
 * [Open Policy Agent(OPA) 【2】rego语法](https://blog.csdn.net/xixihahalelehehe/article/details/116998878?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164188925916780271953559%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164188925916780271953559\&biz\_id=0\&spm=1018.2226.3001.4450)
 * [Open Policy Agent(OPA) 【3】实战](https://blog.csdn.net/xixihahalelehehe/article/details/116904422?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164188925916780271953559%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164188925916780271953559\&biz\_id=0\&spm=1018.2226.3001.4450)
-* [云原生圣经](https://ghostwritten.blog.csdn.net/article/details/108562082)
-
-***
 
 ### 1. 介绍 <a href="#1__11" id="1__11"></a>
-
-\
-\
-\
-
 
 ![](https://img-blog.csdnimg.cn/20210516222256973.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 

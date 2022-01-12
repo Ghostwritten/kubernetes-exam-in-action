@@ -1,21 +1,10 @@
 # Networkpolicy
 
-#### 文章目录
+### 1. 集群配置网络策略 <a href="#1__10" id="1__10"></a>
 
-*
-  * [1. 集群配置网络策略](broken-reference)
-  * [2. Practice - Frontend to Backend traffic](broken-reference)
-  * [3. Practice - Backend to Database traffic](broken-reference)
-
-***
-
-* [k8s networkpolicy网络策略详解添加链接描述](https://ghostwritten.blog.csdn.net/article/details/108422856)
+[k8s networkpolicy网络策略](https://ghostwritten.blog.csdn.net/article/details/108422856)
 
 关键词：NetworkPolicy、 Ingress、 Egress、 ipBlock、 namespaceSelector、 podSelector ports
-
-***
-
-### 1. 集群配置网络策略 <a href="#1__10" id="1__10"></a>
 
 k8s官网： [network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/)\
 
