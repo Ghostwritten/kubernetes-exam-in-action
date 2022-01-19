@@ -1,6 +1,6 @@
 # kubernetes exam in action
 
-[CKS 考试](cka-kao-shi/)
+[CKA 考试](cka-kao-shi/)
 
 [CKAD 考试](ckad-kao-shi/)
 
