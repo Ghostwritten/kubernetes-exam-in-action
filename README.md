@@ -1,17 +1,7 @@
-# 社区
+# kubernetes exam in action
 
+[CKS 考试](cka-kao-shi/)
 
+[CKAD 考试](ckad-kao-shi/)
 
-{% embed url="https://kubernetes.io" %}
-
-{% embed url="https://www.cncf.io" %}
-
-
-
-{% embed url="https://jimmysong.io" %}
-
-{% embed url="https://www.kubernetes.org.cn" %}
-
-{% embed url="https://cloud.redhat.com" %}
-
-{% embed url="https://cloud-atlas.readthedocs.io/zh_CN/latest/index.html#" %}
+[CKS 考试](cks-kao-shi/)
