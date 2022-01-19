@@ -18,8 +18,7 @@
 
 ![](https://img-blog.csdnimg.cn/20210524160715804.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-\
-
+\\
 
 ![](https://img-blog.csdnimg.cn/2021052416082456.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -27,8 +26,7 @@
 
 ### 2. Apiserver启用“Audit Logging” <a href="#2_apiserveraudit_logging_18" id="2_apiserveraudit_logging_18"></a>
 
-官方链接：[audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)\
-
+官方链接：[audit](https://kubernetes.io/docs/tasks/debug-application-cluster/audit/)\\
 
 ![](https://img-blog.csdnimg.cn/20210524161231108.png)
 
@@ -233,8 +231,7 @@ root@master:/etc/kubernetes/manifests# cat /etc/kubernetes/audit/logs/audit.log 
 
 ### 4. 创建高级审计（Audit）策略 <a href="#4_audit_221" id="4_audit_221"></a>
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/2021052416340988.png)\
-
+![在这里插入图片描述](https://img-blog.csdnimg.cn/2021052416340988.png)\\
 
 ![](https://img-blog.csdnimg.cn/20210524163538518.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -379,7 +376,6 @@ root@master:/etc/kubernetes/manifests# tail /etc/kubernetes/audit/logs/audit.log
     "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"system:kube-controller-manager\" of ClusterRole \"system:kube-controller-manager\" to User \"system:kube-controller-manager\""
   }
 }
-
 
 ```
 

@@ -2,8 +2,7 @@
 
 * [kubernetes exam in action](README.md)
 * [社区](<README (1).md>)
-* [Gitbook 博客](https://docs.gitbook.com)
-* [书籍](shu-ji.md)
+* [Gitbook 教程](https://docs.gitbook.com)
 * [CKA考试](cka-kao-shi/README.md)
   * [CKA、CKAD考试经验](cka-kao-shi/ckackad-kao-shi-jing-yan.md)
   * [CKA试题](cka-kao-shi/cka-shi-ti.md)

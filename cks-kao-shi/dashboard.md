@@ -2,19 +2,11 @@
 
 ### 1. 介绍 <a href="#1__4" id="1__4"></a>
 
-\
+\\
 
+![
 
-![](https://img-blog.csdnimg.cn/20210420170140658.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
-
-![](https://img-blog.csdnimg.cn/20210421103515842.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
-
-\
-\
-\
-\
-\
-
+\\](https://img-blog.csdnimg.cn/20210421103515842.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![](https://img-blog.csdnimg.cn/20210421103538246.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
@@ -125,7 +117,6 @@ root@master:~/dashboard# k -n kubernetes-dashboard get svc
 NAME                        TYPE        CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
 dashboard-metrics-scraper   ClusterIP   10.98.155.160   <none>        8000/TCP         17m
 kubernetes-dashboard        NodePort    10.99.150.161   <none>        9090:30613/TCP   17m
-
 
 ```
 
