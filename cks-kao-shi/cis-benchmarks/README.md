@@ -277,8 +277,12 @@ root@master:~/cks/metadata# docker run --pid=host -v /etc:/etc:ro -v /var:/var:r
 root@master:~/cks/metadata# docker run --pid=host -v /etc:/etc:ro -v /var:/var:ro -t aquasec/kube-bench:latest node --version 1.20
 ```
 
-### 4. 注意事项 <a href="#4__282" id="4__282"></a>
+{% hint style="info" %}
+
+
+&#x20;**注意事项**：
 
 * `Kube-Bench`尽可能地实现了`CIS Kubernetes Benchmark`，如果`kube bench`没有正确执行安全基准测试。
 * Kubernete版本和CIS基准测试版本之间没有一对一的映射。，以查看基准测试的不同版本包含哪些Kubernetes版本。
 * `Kube-Bench`无法检查受管集群的主节点，例如GKE、EKS和AKS，因为`Kube-Bench`不能访问这些节点。不过，`Kube-Bench`在这些环境中仍然可以检查worker节点配置。
+{% endhint %}
