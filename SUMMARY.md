@@ -2,6 +2,7 @@
 
 * [kubernetes exam in action](README.md)
 * [社区](<README (1).md>)
+* [Gitbook 博客](https://docs.gitbook.com)
 * [书籍](shu-ji.md)
 * [CKA考试](cka-kao-shi/README.md)
   * [CKA、CKAD考试经验](cka-kao-shi/ckackad-kao-shi-jing-yan.md)
@@ -21,8 +22,7 @@
   * [Dashboard](cks-kao-shi/dashboard.md)
   * [Secure Ingress](cks-kao-shi/secure-ingress.md)
   * [Node Metadata](cks-kao-shi/node-metadata.md)
-  * [CIS Benchmarks](cks-kao-shi/cis-benchmarks/README.md)
-    * [Gitbook 博客](https://docs.gitbook.com)
+  * [CIS Benchmarks](cks-kao-shi/cis-benchmarks.md)
   * [Verify Platform](cks-kao-shi/verify-platform.md)
   * [Networkpolicy](cks-kao-shi/networkpolicy.md)
   * [Restrict API Access](cks-kao-shi/restrict-api-access.md)
