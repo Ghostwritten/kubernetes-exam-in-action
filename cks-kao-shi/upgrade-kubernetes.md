@@ -26,6 +26,8 @@ bash <(curl -s https://raw.githubusercontent.com/killer-sh/cks-course-environmen
 
 ### 3. Practice - Upgrade master node <a href="#3_practice__upgrade_master_node_20" id="3_practice__upgrade_master_node_20"></a>
 
+[kubeadm-update](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/kubeadm-upgrade/)
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20210427135546416.png)
 
 ```
