@@ -54,6 +54,15 @@ May 23 23:21:00 node2 kernel: [192079.038231] falco: initializing ring buffer fo
 May 23 23:21:00 node2 kernel: [192079.088336] falco: CPU buffer initialized, size=8388608
 May 23 23:21:00 node2 kernel: [192079.088339] falco: starting capture
 May 23 23:21:00 node2 falco: Starting internal webserver, listening on port 8765
+
+$ vim monitor_rules.yaml
+
+root@node2:~/falco# falco -M 45 -r falco_rules.local.yaml 
+Wed Jan 26 20:23:23 2022: Falco version 0.30.0 (driver version 3aa7a83bf7b9e6229a3824e3fd1f4452d1e95cb4)
+Wed Jan 26 20:23:23 2022: Falco initialized with configuration file /etc/falco/falco.yaml
+Wed Jan 26 20:23:23 2022: Loading rules from file falco_rules.local.yaml:
+Wed Jan 26 20:23:23 2022: Starting internal webserver, listening on port 8765
+Wed Jan 26 20:23:23 2022: Runtime error: Could not create embedded webserver: null context when constructing CivetServer. Possible problem binding to port.. Exi
 ```
 
 ### 2. Falco 发现恶意进程 <a href="#6_use_falco_to_find_malicious_processes_723" id="6_use_falco_to_find_malicious_processes_723"></a>

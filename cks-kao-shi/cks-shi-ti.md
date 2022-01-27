@@ -908,7 +908,7 @@ $ cd /etc/falco/
 $ ls
 falco_rules.local.yaml  falco_rules.yaml  falco.yaml  k8s_audit_rules.yaml  rules.available  rules.d
 
-$ rep -r "A shell was spawned in a container with an attached terminal" *
+$ grep -r "A shell was spawned in a container with an attached terminal" *
 falco_rules.yaml:    A shell was spawned in a container with an attached terminal (user=%user.name user_loginuid=%user.loginuid %container.info
 
 
