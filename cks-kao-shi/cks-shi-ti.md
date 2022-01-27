@@ -41,6 +41,8 @@ volume需要挂载进去
 
 案例：
 
+* 修改kubeconf文件的server
+* 修改admission\_config.yaml 的defaultAllow为false
 * 配置`/etc/kubernetes/manifests/kube-apiserver.yaml`\
   添加`ImagePolicyWebhook`相关策略
 * 重启api-server,systemctl restart kubelet
@@ -471,14 +473,24 @@ Use the `Trivy` open-source container scanner to detect images with severe vulne
 
 解题思路
 
+[kubectl](https://kubernetes.io/zh/docs/reference/kubectl/cheatsheet/#%E6%A0%BC%E5%BC%8F%E5%8C%96%E8%BE%93%E5%87%BA)
+
 ```
 关键字：Trivy scanner High or Critical
 1. 切换集群，ssh到对应的master
 2. get pod 把对应的image都扫描一下，不能有High or Critical
-$ docker run ghcr.io/aquasecurity/trivy:latest image nginx:latest |grep 'High|Critical'
+$ kubectl get pods --namespace yavin --output=custom-columns="NAME:.metadata.name,IMAGE:.spec.containers[*].image"
+#trivy检查镜像
+$ trivy image nginx:latest |grep 'High|Critical'
+或者
+$ trivy image -s HIGH,CRITICAL nginx:1.14.2
 3. 把有问题的镜像pod删除
 $ docker rmi <image>
 ```
+
+
+
+
 
 ### 11. 创建secret <a href="#11_secret_463" id="11_secret_463"></a>
 
@@ -614,9 +626,50 @@ root      95621  80455  0 19:44 pts/0    00:00:00 grep --color=auto kubelet
 
 ```
 
+`4.2.1`与`4.2.2`修改配置kubelet也可以在`/var/lib/kubelet/config.yaml`
 
+```
 
+$ cat  /var/lib/kubelet/config.yaml
+apiVersion: kubelet.config.k8s.io/v1beta1
+authentication:
+  anonymous:
+    enabled: false  #修改false
+  webhook:
+    cacheTTL: 0s
+    enabled: true
+  x509:
+    clientCAFile: /etc/kubernetes/pki/ca.crt
+authorization:
+  mode: Webhook  #修改Webhook
+  webhook:
+    cacheAuthorizedTTL: 0s
+    cacheUnauthorizedTTL: 0s
+cgroupDriver: systemd
+clusterDNS:
+- 10.96.0.10
+clusterDomain: cluster.local
+cpuManagerReconcilePeriod: 0s
+evictionPressureTransitionPeriod: 0s
+fileCheckFrequency: 0s
+healthzBindAddress: 127.0.0.1
+healthzPort: 10248
+httpCheckFrequency: 0s
+imageMinimumGCAge: 0s
+kind: KubeletConfiguration
+logging: {}
+nodeStatusReportFrequency: 0s
+nodeStatusUpdateFrequency: 0s
+rotateCertificates: true
+runtimeRequestTimeout: 0s
+shutdownGracePeriod: 0s
+shutdownGracePeriodCriticalPods: 0s
+staticPodPath: /etc/kubernetes/manifests
+streamingConnectionIdleTimeout: 0s
+syncFrequency: 0s
+volumeStatsAggPeriod: 0s
 
+```
 
 
 
