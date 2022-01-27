@@ -485,7 +485,7 @@ $ trivy image nginx:latest |grep 'High|Critical'
 或者
 $ trivy image -s HIGH,CRITICAL nginx:1.14.2
 3. 把有问题的镜像pod删除
-$ docker rmi <image>
+$ kubectl delete -n yavin xxx --force
 ```
 
 
