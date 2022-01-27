@@ -573,6 +573,53 @@ docker run --pid=host -v /etc:/etc:ro -v /var:/var:ro -t aquasec/kube-bench:late
 考试中有个ETCD
 ```
 
+![](../.gitbook/assets/image.png)
+
+![](<../.gitbook/assets/image (4).png>)
+
+![](<../.gitbook/assets/image (1).png>)
+
+```
+$ ps -ef | grep kube-apiserver
+$ cd  /etc/kubernetes/manifests/
+$ vim kube-apiserver.yaml
+--authorization-mode=Node,RBAC  #添加
+--insecure-bind-address  #删除
+--insecure-port=0 #添加或修改
+
+$ mv kube-apiserver.yaml ../
+$ mv ../kube-apiserver.yaml .
+
+$ systemctl status kubelet
+配置--anonymous-auth与--authorization-mode
+$ vim /etc/systemd/system/kubelet.service.d/10-kubeadm.conf
+[Service]
+Environment="KUBELET_KUBECONFIG_ARGS=--bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf"
+Environment="KUBELET_CONFIG_ARGS=--config=/var/lib/kubelet/config.yaml"
+Environment="KUBELET_SYSTEM_PODS_ARGS=--anonymous-auth=false"
+Environment="KUBELET_AUTHZ_ARGS=--authorization-mode=Webhook"
+# This is a file that "kubeadm init" and "kubeadm join" generates at runtime, populating the KUBELET_KUBEADM_ARGS variable dynamically
+EnvironmentFile=-/var/lib/kubelet/kubeadm-flags.env
+# This is a file that the user can use for overrides of the kubelet args as a last resort. Preferably, the user should use
+# the .NodeRegistration.KubeletExtraArgs object in the configuration files instead. KUBELET_EXTRA_ARGS should be sourced from this file.
+EnvironmentFile=-/etc/default/kubelet
+ExecStart=/usr/bin/kubelet $KUBELET_KUBECONFIG_ARGS $KUBELET_CONFIG_ARGS $KUBELET_KUBEADM_ARGS $KUBELET_EXTRA_ARGS $KUBELET_SYSTEM_PODS_ARGS $KUBELET_AUTHZ_ARGS
+
+$ systemctl daemon-reload 
+$ systemctl restart kubelet
+$ systemctl status kubelet
+$ ps -ef |grep kubelet |grep -v api
+root      95185      1 13 19:44 ?        00:00:00 /usr/bin/kubelet --bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf --kubeconfig=/etc/kubernetes/kubelet.conf --config=/var/lib/kubelet/config.yaml --network-plugin=cni --pod-infra-container-image=k8s.gcr.io/pause:3.2 --anonymous-auth=false --authorization-mode=Webhook
+root      95621  80455  0 19:44 pts/0    00:00:00 grep --color=auto kubelet
+
+```
+
+
+
+
+
+
+
 案例1
 
 ```
@@ -582,10 +629,16 @@ $ docker run --pid=host -v /etc:/etc:ro -v /var:/var:ro -t aquasec/kube-bench:la
 .............
 ```
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/ed084899399b410a8f6e620fc969bcd9.png)\
+\
 案例2\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/46d6e79e208c47d8af42b9c92bdd3b26.png)\
-![在这里插入图片描述](https://img-blog.csdnimg.cn/da5c63c76adf4412abddcfcfcd3ec822.png)
+\
+
+
+![](https://img-blog.csdnimg.cn/ed084899399b410a8f6e620fc969bcd9.png)
+
+![](https://img-blog.csdnimg.cn/46d6e79e208c47d8af42b9c92bdd3b26.png)
+
+![](https://img-blog.csdnimg.cn/da5c63c76adf4412abddcfcfcd3ec822.png)
 
 ```
 $ cat /etc/kubernetes/kubelet.conf
