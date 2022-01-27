@@ -336,10 +336,11 @@ $ kubectl label ns testing name=testing
 
 3. 编排networkpolicy策略
 $ cat /cks/6/p1.yaml
+apiVersion: networking.k8s.io/v1
 kind: NetworkPolicy
 metadata:
-name: "pod-access"
-namespace: "development"
+  name: "pod-access"
+  namespace: "development"
 spec:
   podSelector:
     matchLabels:
@@ -675,7 +676,6 @@ metadata:
 spec:
   runtimeClassName: untrusted
 .......
-
 ```
 
 ### 14. 审计 <a href="#14__655" id="14__655"></a>
