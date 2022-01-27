@@ -524,7 +524,7 @@ spec:
   - name: dev-container
     image: nginx:1.9
     volumeMounts:
-    - name: foo
+    - name: dev-volume
       mountPath: "/etc/test-secret"
       readOnly: true
   volumes:
