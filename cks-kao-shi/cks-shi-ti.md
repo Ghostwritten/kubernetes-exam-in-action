@@ -789,15 +789,23 @@ $ vim /etc/kubernetes/manifests/kube-apiserver.yaml
     - --audit-log-maxage=5                                     # add
     - --audit-log-maxbackup=10 
 ......
-   - mountPath: /etc/kubernetes/logpolicy      # add
-      name: audit                           # add
-  hostNetwork: true
-  priorityClassName: system-node-critical
-  volumes:
-  - hostPath:                               # add
-      path: /etc/kubernetes/logpolicy           # add
-      type: DirectoryOrCreate               # add
-    name: audit                             # add
+volumeMounts:
+  - mountPath: /etc/kubernetes/logpolicy/sample-policy.yaml
+    name: audit
+    readOnly: true
+  - mountPath: /var/log/kubernetes/
+    name: audit-log
+    readOnly: false
+volumes:
+- name: audit
+  hostPath:
+    path: /etc/kubernetes/logpolicy/sample-policy.yaml
+    type: File
+
+- name: audit-log
+  hostPath:
+    path: /var/log/kubernetes/
+    type: DirectoryOrCreate                            
 
 
 3.重启kubelet
