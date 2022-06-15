@@ -1,7 +1,6 @@
 # Table of contents
 
 * [kubernetes exam in action](README.md)
-* [Git In Action](https://ghostwritten.gitbook.io/git-in-action/)
 * [云原生](yun-yuan-sheng.md)
 * [KCNA 考试](kcna-kao-shi/README.md)
   * [KCNA3：容器编排](kcna-kao-shi/kcna3-rong-qi-bian-pai.md)
