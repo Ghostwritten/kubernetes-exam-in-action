@@ -1,4 +1,4 @@
-# KCNA3：容器编排
+# KCNA 2：容器编排
 
 ### 1. 概述
 
@@ -66,7 +66,7 @@ cgroup被用来组织层次结构组中的进程，并为它们分配资源，�
 docker run nginx
 ```
 
-`runtime-spec`与`image-spec`密切相关，我们将在下一章中讨论`image-spec`,因为它描述了如何解压容器映像，然后管理整个容器生命周期，从创建容器环境，到启动进程、停止和删除它。 对于您的本地机器，有很多可供选择的替代方案，其中一些仅用于构建映像，如[buildah](https://buildah.io)或[kaniko](https://github.com/GoogleContainerTools/kaniko)，而其他的则作为Docker的完全替代方案，如[podman](https://podman.io)。 Podman提供了与Docker相似的API，可以作为替代。此外，它还提供了一些额外的特性，比如运行没有根权限的容器，以及我们将在后面发现的Pod概念的使用。
+`runtime-spec`与`image-spec`密切相关，我们将在下一章中讨论`image-spec`,因为它描述了如何解压容器映像，然后管理整个容器生命周期，从创建容器环境，到启动进程、停止和删除它。 对于您的本地机器，有很多可供选择的替代方案，其中一些仅用于构建映像，如[buildah](https://buildah.io/)或[kaniko](https://github.com/GoogleContainerTools/kaniko)，而其他的则作为Docker的完全替代方案，如[podman](https://podman.io/)。 Podman提供了与Docker相似的API，可以作为替代。此外，它还提供了一些额外的特性，比如运行没有根权限的容器，以及我们将在后面发现的Pod概念的使用。
 
 ### 6. 构建镜像
 
@@ -116,7 +116,7 @@ docker pull my-registry.com/my-python-image
 
 ### 7. 容器安全
 
-理解容器与虚拟机有不同的安全需求是很重要的。很多人依赖于容器的隔离特性，但这可能是非常危险的。 当容器在一台机器上启动时，它们总是共享同一个内核，如果允许容器调用内核函数(例如杀死其他进程或通过创建路由规则修改主机网络)，这就会对整个系统构成风险。您可以在[Docker文档](https://docs.docker.com/engine/security/#linux-kernel-capabilities)中了解更多关于内核功能的信息。 最大的安全风险之一(不仅是在容器领域)是执行具有太多特权的进程，特别是以root或管理员身份启动进程。不幸的是，这个问题在过去被忽视了很多，有很多容器作为根用户运行。 容器引入的一个相当新的攻击面是公共图像的使用。两个最流行的公共映像注册中心是[Docker Hub](https://hub.docker.com)和[Quay](https://quay.io)，虽然它们提供了公共访问的映像，但您必须确保这些映像没有被修改成包含恶意软件。 Sysdig有一篇关于[如何避免大量安全问题和构建安全容器映像](https://sysdig.com/blog/dockerfile-best-practices/)的很棒的博客文章。 一般来说，安全性并不是只能在容器层实现的。这是一个持续的过程，需要随时调整。云本地安全性的4C可以大致说明在使用容器时需要保护哪些层。确保覆盖每一层，因为它有效地保护了内部的一层。Kubernetes文档是理解层的一个很好的起点。
+理解容器与虚拟机有不同的安全需求是很重要的。很多人依赖于容器的隔离特性，但这可能是非常危险的。 当容器在一台机器上启动时，它们总是共享同一个内核，如果允许容器调用内核函数(例如杀死其他进程或通过创建路由规则修改主机网络)，这就会对整个系统构成风险。您可以在[Docker文档](https://docs.docker.com/engine/security/#linux-kernel-capabilities)中了解更多关于内核功能的信息。 最大的安全风险之一(不仅是在容器领域)是执行具有太多特权的进程，特别是以root或管理员身份启动进程。不幸的是，这个问题在过去被忽视了很多，有很多容器作为根用户运行。 容器引入的一个相当新的攻击面是公共图像的使用。两个最流行的公共映像注册中心是[Docker Hub](https://hub.docker.com/)和[Quay](https://quay.io/)，虽然它们提供了公共访问的映像，但您必须确保这些映像没有被修改成包含恶意软件。 Sysdig有一篇关于[如何避免大量安全问题和构建安全容器映像](https://sysdig.com/blog/dockerfile-best-practices/)的很棒的博客文章。 一般来说，安全性并不是只能在容器层实现的。这是一个持续的过程，需要随时调整。云本地安全性的4C可以大致说明在使用容器时需要保护哪些层。确保覆盖每一层，因为它有效地保护了内部的一层。Kubernetes文档是理解层的一个很好的起点。
 
 &#x20;The 4C's of Cloud Native Security, retrieved from the [Kubernetes documentation](https://kubernetes.io/docs/concepts/security/overview/)
 
@@ -156,11 +156,11 @@ docker pull my-registry.com/my-python-image
 解决这个问题的方法还是自动化。所有信息都放在Service Registry中，而不是手工维护的服务器列表(在本例中是容器)。在网络中查找其他服务并请求关于它们的信息称为服务发现（Service Discovery）。
 
 * 拥有服务API的现代DNS服务器可以用于在创建新服务时注册它们。这种方法非常简单，因为大多数组织已经拥有具有适当功能的DNS服务器。
-* 使用高度一致的数据存储，特别是用于存储关于服务的信息。许多系统能够通过强大的故障转移机制进行高可用性操作。流行的选择，特别是对于集群来说，是[etcd](https://github.com/etcd-io/etcd)、[Consul](https://www.consul.io)或[Apache Zookeeper](https://zookeeper.apache.org)。
+* 使用高度一致的数据存储，特别是用于存储关于服务的信息。许多系统能够通过强大的故障转移机制进行高可用性操作。流行的选择，特别是对于集群来说，是[etcd](https://github.com/etcd-io/etcd)、[Consul](https://www.consul.io/)或[Apache Zookeeper](https://zookeeper.apache.org/)。
 
 ### 11. 服务网格（Service Mesh）
 
-由于网络是微服务和容器如此重要的一部分，因此对于开发人员和管理员来说，网络可能变得非常复杂和不透明。除此之外，当容器彼此通信时，还需要**监视**、**访问控制**或**网络流量加密**等许多功能。 不必在应用程序中实现所有这些功能，只需启动第二个实现了这些功能的容器。用来管理网络流量的软件叫做代理。这是一个位于客户机和服务器之间的服务器应用程序，可以在网络流量到达服务器之前修改或过滤网络流量。受欢迎的代表是[nginx](https://www.nginx.com), [haproxy](http://www.haproxy.org)或[envoy](https://www.envoyproxy.io)。 更进一步，服务网格将代理服务器添加到架构中的每个容器中。 ![在这里插入图片描述](https://img-blog.csdnimg.cn/b73a535c57e2412697defe78f01441e3.png?) 从[Istio .io](https://istio.io/v1.10/docs/ops/deployment/architecture/)中检索 现在可以使用代理来处理服务之间的网络通信。 让我们以加密为例。如果两个或多个应用程序在彼此通信时应该加密它们的通信，那么就需要添加库、配置和管理数字证书，以证明所涉及的应用程序的身份。这可能是大量的工作，而且如果不特别小心的话，也可能容易出错。 当使用服务网格时，应用程序不直接相互通信，而是通过代理路由流量。目前最流行的服务网格是[istio](https://istio.io)和[linkerd](https://linkerd.io)。虽然它们在实现上有差异，但架构是相同的。 服务网格中的代理构成了数据平面。这是实现网络规则和塑造流量流的地方。 这些规则在服务网格的控制平面中集中管理。在这里，您可以定义流量如何从服务A流向服务B，以及应该对代理应用哪些配置。 因此，无需编写代码并安装库，只需编写一个配置文件，在其中告诉服务网格，服务a和服务B应该始终加密通信。然后，配置被上传到控制平面，并被分发到数据平面以执行新规则。 很长一段时间以来，术语“服务网格”只描述了容器平台中如何使用代理处理流量的基本思想。服务网格接口([Service Mesh Interface, SMI](https://smi-spec.io))项目旨在定义一个关于如何实现来自不同提供者的服务网格的规范。他们非常关注Kubernetes，他们的目标是标准化服务网格的最终用户体验，以及为希望与Kubernetes集成的提供商提供一个标准。你可以在GitHub上找到当前的[规范](https://github.com/servicemeshinterface/smi-spec)。
+由于网络是微服务和容器如此重要的一部分，因此对于开发人员和管理员来说，网络可能变得非常复杂和不透明。除此之外，当容器彼此通信时，还需要**监视**、**访问控制**或**网络流量加密**等许多功能。 不必在应用程序中实现所有这些功能，只需启动第二个实现了这些功能的容器。用来管理网络流量的软件叫做代理。这是一个位于客户机和服务器之间的服务器应用程序，可以在网络流量到达服务器之前修改或过滤网络流量。受欢迎的代表是[nginx](https://www.nginx.com/), [haproxy](http://www.haproxy.org/)或[envoy](https://www.envoyproxy.io/)。 更进一步，服务网格将代理服务器添加到架构中的每个容器中。 ![在这里插入图片描述](https://img-blog.csdnimg.cn/b73a535c57e2412697defe78f01441e3.png?) 从[Istio .io](https://istio.io/v1.10/docs/ops/deployment/architecture/)中检索 现在可以使用代理来处理服务之间的网络通信。 让我们以加密为例。如果两个或多个应用程序在彼此通信时应该加密它们的通信，那么就需要添加库、配置和管理数字证书，以证明所涉及的应用程序的身份。这可能是大量的工作，而且如果不特别小心的话，也可能容易出错。 当使用服务网格时，应用程序不直接相互通信，而是通过代理路由流量。目前最流行的服务网格是[istio](https://istio.io/)和[linkerd](https://linkerd.io/)。虽然它们在实现上有差异，但架构是相同的。 服务网格中的代理构成了数据平面。这是实现网络规则和塑造流量流的地方。 这些规则在服务网格的控制平面中集中管理。在这里，您可以定义流量如何从服务A流向服务B，以及应该对代理应用哪些配置。 因此，无需编写代码并安装库，只需编写一个配置文件，在其中告诉服务网格，服务a和服务B应该始终加密通信。然后，配置被上传到控制平面，并被分发到数据平面以执行新规则。 很长一段时间以来，术语“服务网格”只描述了容器平台中如何使用代理处理流量的基本思想。服务网格接口([Service Mesh Interface, SMI](https://smi-spec.io/))项目旨在定义一个关于如何实现来自不同提供者的服务网格的规范。他们非常关注Kubernetes，他们的目标是标准化服务网格的最终用户体验，以及为希望与Kubernetes集成的提供商提供一个标准。你可以在GitHub上找到当前的[规范](https://github.com/servicemeshinterface/smi-spec)。
 
 ### 12. 容器存储
 
@@ -215,4 +215,4 @@ docker pull my-registry.com/my-python-image
 
 #### 13.10 Docker Container Playground
 
-* [Play with Docker](https://labs.play-with-docker.com)
+* [Play with Docker](https://labs.play-with-docker.com/)

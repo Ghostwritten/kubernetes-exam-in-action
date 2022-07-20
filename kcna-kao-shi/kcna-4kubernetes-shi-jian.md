@@ -1,4 +1,4 @@
-# KCNA 5：kubernetes实践
+# KCNA 4：kubernetes实践
 
 ### 1. 简介 <a href="#1__7" id="1__7"></a>
 
@@ -169,15 +169,15 @@ Kubernetes官方仪表盘的截图\
 
 * [kubernetes/dashboard](https://github.com/kubernetes/dashboard)
 * [derailed/k9s](https://github.com/derailed/k9s)
-* [Lens](https://k8slens.dev)
+* [Lens](https://k8slens.dev/)
 * [VMware Tanzu Octant](https://github.com/vmware-tanzu/octant)
 
 尽管有许多CLI工具和gui，但还有一些高级工具允许创建模板和打包Kubernetes对象。也许今天Kubernetes最常用的工具是Helm。\
-[Helm](https://helm.sh)是一个Kubernetes的包管理器，它允许更简单的更新和与对象的交互。Helm将Kubernetes对象封装在所谓的Charts中，可以通过注册表与他人共享。要开始使用Kubernetes，您可以搜索[ArtifactHub](https://artifacthub.io)，找到您最喜欢的软件包，准备部署。
+[Helm](https://helm.sh/)是一个Kubernetes的包管理器，它允许更简单的更新和与对象的交互。Helm将Kubernetes对象封装在所谓的Charts中，可以通过注册表与他人共享。要开始使用Kubernetes，您可以搜索[ArtifactHub](https://artifacthub.io/)，找到您最喜欢的软件包，准备部署。
 
 #### 4.1 Demo: kubectl <a href="#41_demo_kubectl_180" id="41_demo_kubectl_180"></a>
 
-* [kubectl 命令](https://blog.csdn.net/xixihahalelehehe/article/details/107714611?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164734401216780261970494%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164734401216780261970494\&biz\_id=0\&spm=1018.2226.3001.4450)
+* [kubectl 命令](https://blog.csdn.net/xixihahalelehehe/article/details/107714611?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164734401216780261970494%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164734401216780261970494\&biz\_id=0\&utm\_medium=distribute.pc\_search\_result.none-task-blog-2\~blog\~first\_rank\_ecpm\_v1\~rank\_v31\_ecpm-2-107714611.nonecase\&utm\_term=kubectl\&spm=1018.2226.3001.4450)
 
 ### 5. Pod 概念 <a href="#5_pod__185" id="5_pod__185"></a>
 
@@ -228,8 +228,8 @@ spec:
 请务必浏览有关pod的文档，因为还有更多设置有待发现。对于Pod中的每个容器，可以设置的一些重要设置示例如下:
 
 * [resources](https://ghostwritten.blog.csdn.net/article/details/112524133): 设置一个资源请求和CPU和内存的最大限制
-* [livenessProbe](https://blog.csdn.net/xixihahalelehehe/article/details/108561740?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164734455316780366546099%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164734455316780366546099\&biz\_id=0\&spm=1018.2226.3001.4450): 配置定期检查应用程序是否仍处于活动状态的运行状况检查。如果检查失败，可以重新启动容器。
-* [securityContext](https://blog.csdn.net/xixihahalelehehe/article/details/108539153?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164734458716780271923305%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164734458716780271923305\&biz\_id=0\&spm=1018.2226.3001.4450): 设置用户和组设置，以及内核功能。
+* [livenessProbe](https://blog.csdn.net/xixihahalelehehe/article/details/108561740?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164734455316780366546099%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164734455316780366546099\&biz\_id=0\&utm\_medium=distribute.pc\_search\_result.none-task-blog-2\~blog\~first\_rank\_ecpm\_v1\~rank\_v31\_ecpm-1-108561740.nonecase\&utm\_term=%20livenessProbe\&spm=1018.2226.3001.4450): 配置定期检查应用程序是否仍处于活动状态的运行状况检查。如果检查失败，可以重新启动容器。
+* [securityContext](https://blog.csdn.net/xixihahalelehehe/article/details/108539153?ops\_request\_misc=%257B%2522request%255Fid%2522%253A%2522164734458716780271923305%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fblog.%2522%257D\&request\_id=164734458716780271923305\&biz\_id=0\&utm\_medium=distribute.pc\_search\_result.none-task-blog-2\~blog\~first\_rank\_ecpm\_v1\~rank\_v31\_ecpm-2-108539153.nonecase\&utm\_term=securityContext\&spm=1018.2226.3001.4450): 设置用户和组设置，以及内核功能。
 
 #### 5.1 Demo: Pods <a href="#51_demo_pods_235" id="51_demo_pods_235"></a>
 
@@ -508,7 +508,7 @@ spec:
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/63c0ca09884d4d37854f1c14046900ab.png#pic\_center)\
 卷允许在同一个Pod中的多个容器之间共享数据。当您想要使用侧车模式时，这个概念允许极大的灵活性。它们的第二个用途是在Pod崩溃并在同一节点上重新启动时防止数据丢失。pod以干净的状态启动，但所有数据会丢失，除非写入卷。\
-不幸的是，包含多个服务器的集群环境在持久性存储方面需要更多的灵活性。根据环境的不同，我们可以使用像[Amazon EBS](https://aws.amazon.com/ebs/)、[谷歌Persistent Disks](https://cloud.google.com/persistent-disk)、[Azure Disk storage](https://azure.microsoft.com/en-us/services/storage/disks/)这样的云块存储，也可以使用像[Ceph](https://ceph.io/en/)、[GlusterFS](https://www.gluster.org)这样的存储系统或更传统的系统，比如NFS。\
+不幸的是，包含多个服务器的集群环境在持久性存储方面需要更多的灵活性。根据环境的不同，我们可以使用像[Amazon EBS](https://aws.amazon.com/ebs/)、[谷歌Persistent Disks](https://cloud.google.com/persistent-disk)、[Azure Disk storage](https://azure.microsoft.com/en-us/services/storage/disks/)这样的云块存储，也可以使用像[Ceph](https://ceph.io/en/)、[GlusterFS](https://www.gluster.org/)这样的存储系统或更传统的系统，比如NFS。\
 这些只是Kubernetes中可以使用的存储的几个例子。为了让用户体验更加统一，Kubernetes使用了容器存储接口CSI (Container Storage Interface)，它允许存储供应商编写一个可以在Kubernetes中使用的插件(存储驱动程序)。
 
 为了使用这个抽象，我们还有两个可以使用的对象:
@@ -565,7 +565,7 @@ spec:
 ```
 
 这个例子展示了一个`PersistentVolume`，它使用了一个使用CSI驱动程序实现的AWS EBS卷。在配置了PersistentVolume之后，开发人员可以使用PersistentVolumeClaim来预留它。最后一步是在Pod中使用PVC作为卷，就像我们之前看到的hostPath示例一样。\
-可以直接在Kubernetes中操作存储集群。像[Rook](https://rook.io)这样的项目提供云本地存储业务编排，并与经过实战测试的存储解决方案(如Ceph)集成。\
+可以直接在Kubernetes中操作存储集群。像[Rook](https://rook.io/)这样的项目提供云本地存储业务编排，并与经过实战测试的存储解决方案(如Ceph)集成。\
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/485246bfc6ff4e809733f5384afc2eb5.png#pic\_center)
 
 Rook架构，[从Rook文档中检索](https://rook.io/docs/rook/v1.7/ceph-storage.html)
@@ -623,7 +623,7 @@ spec:
 ```
 
 从一开始，Kubernetes也提供了一个对象来存储敏感信息，如密码、密钥或其他凭证。这些对象被称为[Secrets](https://kubernetes.io/zh/docs/concepts/configuration/secret/#using-secrets)。秘密与ConfigMaps非常相关，基本上它们唯一的区别是秘密是base64编码的。\
-关于使用“秘密”的风险，人们一直在争论不休，因为“秘密”(与名称相反)并不被认为是安全的。在原生云环境中，已经出现了专门创建的秘密管理工具，它们可以很好地与Kubernetes集成。[HashiCorp Vault](https://www.vaultproject.io)就是一个例子。
+关于使用“秘密”的风险，人们一直在争论不休，因为“秘密”(与名称相反)并不被认为是安全的。在原生云环境中，已经出现了专门创建的秘密管理工具，它们可以很好地与Kubernetes集成。[HashiCorp Vault](https://www.vaultproject.io/)就是一个例子。
 
 ### 10. Autoscaling <a href="#10_autoscaling_624" id="10_autoscaling_624"></a>
 
@@ -639,7 +639,7 @@ spec:
 不幸的是，Kubernetes的(水平)自动伸缩是无法开箱即用的，需要安装一个名为[metrics-server](https://github.com/kubernetes-sigs/metrics-server)的附加组件。
 
 但是，用Kubernetes Metrics api的[Prometheus Adapter](https://github.com/kubernetes-sigs/prometheus-adapter)替换度量服务器是可能的。prometheus-adapter允许您在Kubernetes中使用自定义指标，并根据系统上的请求或用户数量等因素进行放大或缩小。\
-像[KEDA](https://keda.sh)这样的项目可以根据外部系统触发的事件来扩展Kubernetes工作负载，而不是仅仅依赖于指标。KEDA是基于kubernetes的事件驱动自动scaler的缩写，于2019年作为微软和红帽公司的合作伙伴启动。与HPA类似，KEDA可以扩展部署、复制集、pod等，还可以扩展Kubernetes作业等其他对象。通过大量现成的扩展器的选择，KEDA可以扩展到特殊的触发器，比如数据库查询，甚至Kubernetes集群中pod的数量。
+像[KEDA](https://keda.sh/)这样的项目可以根据外部系统触发的事件来扩展Kubernetes工作负载，而不是仅仅依赖于指标。KEDA是基于kubernetes的事件驱动自动scaler的缩写，于2019年作为微软和红帽公司的合作伙伴启动。与HPA类似，KEDA可以扩展部署、复制集、pod等，还可以扩展Kubernetes作业等其他对象。通过大量现成的扩展器的选择，KEDA可以扩展到特殊的触发器，比如数据库查询，甚至Kubernetes集群中pod的数量。
 
 交互式教程-缩放您的应用程序\
 在交互式教程的第五部分:运行应用程序的多个实例中，你可以学习[如何手动扩展应用程序](https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/)。

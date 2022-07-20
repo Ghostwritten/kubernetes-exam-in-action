@@ -1,4 +1,4 @@
-# KCNA 4：kubernetes基础知识
+# KCNA 3：kubernetes基础知识
 
 @\[toc]
 
@@ -6,7 +6,7 @@
 
 ### 1. Kubernetes简介
 
-Kubernetes是一个非常流行的开源容器编排平台，可以用来自动化部署、扩展和管理容器化的工作负载。在本章中，我们将发现Kubernetes集群的基本架构及其组件。要学习更多的Kubernetes基础知识，您可以参加Linux基金会的[免费Kubernetes入门(LFS158x)课程](https://training.linuxfoundation.org/training/introduction-to-kubernetes/#)。 Kubernetes最初是由谷歌设计和开发的，在2014年得到了开源，随着1.0版Kubernetes被捐赠给新成立的云本地计算。
+Kubernetes是一个非常流行的开源容器编排平台，可以用来自动化部署、扩展和管理容器化的工作负载。在本章中，我们将发现Kubernetes集群的基本架构及其组件。要学习更多的Kubernetes基础知识，您可以参加Linux基金会的[免费Kubernetes入门(LFS158x)课程](https://training.linuxfoundation.org/training/introduction-to-kubernetes/)。 Kubernetes最初是由谷歌设计和开发的，在2014年得到了开源，随着1.0版Kubernetes被捐赠给新成立的云本地计算。
 
 ### 2. 学习目标
 
@@ -38,7 +38,7 @@ master节点组件：
 
 node节点组件：
 
-* 容器运行时：容器运行时负责在工作节点上运行容器。在很长一段时间里，Docker是最流行的选择，但现在被其他运行时所取代，如[containerd](https://containerd.io)。
+* 容器运行时：容器运行时负责在工作节点上运行容器。在很长一段时间里，Docker是最流行的选择，但现在被其他运行时所取代，如[containerd](https://containerd.io/)。
 * kubelet：在集群中的每个工作节点上运行的小型代理。kubelet与api服务器和容器运行时对话，以处理启动容器的最后阶段。
 * kube-proxy：处理集群内部和外部通信的网络代理。如果可能的话，kube代理尝试依赖底层操作系统的网络功能，而不是自己管理流量。
 
@@ -49,8 +49,8 @@ node节点组件：
 建立Kubernetes集群可以通过许多不同的方法来实现。使用正确的工具，创建一个测试“集群”非常容易:
 
 * [Minikube](https://minikube.sigs.k8s.io/docs/)
-* [kind](https://kind.sigs.k8s.io)
-* [MicroK8s](https://microk8s.io)
+* [kind](https://kind.sigs.k8s.io/)
+* [MicroK8s](https://microk8s.io/)
 
 如果你想在自己的硬件或虚拟机上建立一个生产级的集群，你可以选择各种安装程序之一:
 
@@ -60,8 +60,8 @@ node节点组件：
 
 一些供应商开始将Kubernetes打包成一个发行版，甚至提供商业支持:
 
-* [Rancher](https://rancher.com)
-* [k3s](https://k3s.io)
+* [Rancher](https://rancher.com/)
+* [k3s](https://k3s.io/)
 * [OpenShift](https://www.redhat.com/en/technologies/cloud-computing/openshift)
 * [VMWare Tanzu](https://tanzu.vmware.com/tanzu)
 
@@ -80,9 +80,9 @@ node节点组件：
 
 * 身份验证 请求者需要提供一种针对API进行身份验证的方法。通常使用数字签名证书(X.509)或外部身份管理系统。Kubernetes用户总是由外部管理的。服务帐户可以用来认证技术用户。
 * 授权 它决定了请求者被允许做什么。在Kubernetes中，这可以通过基于角色的访问控制(RBAC)来实现。
-* 允许控制[添加链接描述](https://cri-o.io) 在最后一步中，可以使用入场控制器来修改或验证请求。例如，如果用户试图使用来自不可信注册中心的容器图
+* 允许控制[添加链接描述](https://cri-o.io/) 在最后一步中，可以使用入场控制器来修改或验证请求。例如，如果用户试图使用来自不可信注册中心的容器图
 
-准入控制器可能会阻止此请求。像[Open Policy Agent](https://www.openpolicyagent.org)这样的工具可以用于外部管理[准入控制](https://kubernetes.io/docs/concepts/security/controlling-access/)。 与许多其他API一样，Kubernetes API是作为通过HTTPS公开的RESTful接口实现的。通过这个API，用户或服务可以创建、修改、删除或检索驻留在Kubernetes中的资源。
+准入控制器可能会阻止此请求。像[Open Policy Agent](https://www.openpolicyagent.org/)这样的工具可以用于外部管理[准入控制](https://kubernetes.io/docs/concepts/security/controlling-access/)。 与许多其他API一样，Kubernetes API是作为通过HTTPS公开的RESTful接口实现的。通过这个API，用户或服务可以创建、修改、删除或检索驻留在Kubernetes中的资源。
 
 ### 6. Kubernetes上运行容器
 
@@ -90,14 +90,14 @@ node节点组件：
 
 为了允许使用其他容器运行时而不是Docker, Kubernetes在2016年引入了[容器运行时接口(CRI)](https://kubernetes.io/blog/2016/12/container-runtime-interface-cri-in-kubernetes/)。
 
-* `containerd`：[Containerd](https://containerd.io)是一个运行容器的轻量级、高性能实现。可以说是目前最流行的容器运行时。Kubernetes即服务产品的所有主要云提供商都使用它。
-* CRI-O：[CRI-O](https://cri-o.io)由Red Hat创建，具有与podman和buildah密切相关的类似代码库。
+* `containerd`：[Containerd](https://containerd.io/)是一个运行容器的轻量级、高性能实现。可以说是目前最流行的容器运行时。Kubernetes即服务产品的所有主要云提供商都使用它。
+* CRI-O：[CRI-O](https://cri-o.io/)由Red Hat创建，具有与podman和buildah密切相关的类似代码库。
 * Docker：这个标准存在了很长一段时间，但从未真正用于容器编排。Docker作为Kubernetes运行时的使用已经被弃用，并将在Kubernetes 1.23中移除。[Kubernetes有一篇很棒的博客文章](https://kubernetes.io/blog/2020/12/02/dont-panic-kubernetes-and-docker/)，回答了关于这个问题的所有问题。
 
 使用containerd创建容器要比使用Docker简单得多 `containerd`和`CRI-O`的想法非常简单:提供一个只包含运行容器绝对必要的运行时。不过，它们还有一些额外的特性，比如与容器运行时沙箱工具集成的能力。这些工具试图解决在多个容器之间共享内核所带来的安全问题。目前最常用的工具有:
 
 * [gvisor](https://github.com/google/gvisor)：由谷歌创建，提供了一个位于容器化进程和主机内核之间的应用程序内核。
-* [Kata Containers](https://katacontainers.io)：提供轻量级虚拟机的安全运行时，但其行为类似于容器。
+* [Kata Containers](https://katacontainers.io/)：提供轻量级虚拟机的安全运行时，但其行为类似于容器。
 
 ### 7. Networking
 
@@ -117,7 +117,7 @@ Kubernetes中有不同的实现网络的方式，但也有三个重要的需求:
 
 * [Project Calico](https://www.tigera.io/project-calico/)
 * [Weave](https://www.weave.works/oss/net/)
-* [Cilium](https://cilium.io)
+* [Cilium](https://cilium.io/)
 
 在Kubernetes中，每个Pod都有自己的IP地址，所以不需要手动配置。此外，大多数Kubernetes设置包括一个名为[core-dns](https://kubernetes.io/docs/tasks/administer-cluster/coredns/)的DNS服务器附加组件，它可以在集群内提供服务发现和名称解析。
 
@@ -166,6 +166,6 @@ Kubernetes中有不同的实现网络的方式，但也有三个重要的需求:
 
 #### 9.8 Kubernetes Playground
 
-* [Play with Kubernetes](https://labs.play-with-k8s.com)
+* [Play with Kubernetes](https://labs.play-with-k8s.com/)
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/282cb85495424bde9a8bd1bbdbc7b630.gif#pic\_center)

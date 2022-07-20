@@ -1,4 +1,4 @@
-# KCNA考试 第六章：持续交付
+# KCNA 5：持续交付
 
 ### 1. 简介 <a href="#1__4" id="1__4"></a>
 
@@ -21,7 +21,7 @@
 
 在2005年，Linus Torvalds创建了Git，这是现在几乎所有人都在使用的标准版本控制系统。Git是一个分散的系统，可以用来跟踪源代码中的更改。本质上，Git可以在您的更改合并回主分支之前，使用代码副本(在分支或分支中调用)。
 
-请务必查看这个网页以了解更多关于[git](https://git-scm.com)的信息，因为它是一个强大的行业标准工具，几乎所有的开发人员和管理员每天都在使用它。\
+请务必查看这个网页以了解更多关于[git](https://git-scm.com/)的信息，因为它是一个强大的行业标准工具，几乎所有的开发人员和管理员每天都在使用它。\
 在检查源代码之后，交付应用程序之前的下一步就是构建它，这也可能包括容器映像的构建，如容器编排一章所述。\
 为了确保你的应用的高质量，下一步应该是广泛和自动测试应用程序，以确保所有功能仍然在有人作出更改后。
 
@@ -43,12 +43,12 @@
 
 流行的CI/CD工具包括:
 
-* [Spinnaker](https://spinnaker.io)
-* [GitLab](https://about.gitlab.com)
-* [Jenkins](https://www.jenkins.io)
-* [Jenkins X](https://jenkins-x.io)
+* [Spinnaker](https://spinnaker.io/)
+* [GitLab](https://about.gitlab.com/)
+* [Jenkins](https://www.jenkins.io/)
+* [Jenkins X](https://jenkins-x.io/)
 * [Tekton CD](https://github.com/tektoncd/pipeline)
-* [Argo.](https://argoproj.github.io)
+* [Argo.](https://argoproj.github.io/)
 
 为了更深入地了解DevOps、站点可靠性工程和基础设施作为代码，我们强烈建议您学习DevOps和[站点可靠性工程概论(LFS162)](https://training.linuxfoundation.org/training/introduction-to-devops)，这是edX上的一门免费课程。
 
@@ -66,7 +66,7 @@ CI/CD管道有两种不同的方法来实现你想要的更改:
 * Pull-based\
   代理会监视git存储库的变化，并将存储库中的定义与实际运行状态进行比较。如果检测到更改，则代理将更改应用到基础设施。
 
-使用基于拉的方法的两个流行的GitOps框架的例子是[Flux](https://fluxcd.io)和[ArgoCD](https://argo-cd.readthedocs.io/en/stable/)。ArgoCD是作为Kubernetes控制器实现的，而Flux是用GitOps工具包构建的，这是一组api和控制器，可以用来扩展Flux，甚至构建一个定制的交付平台。\
+使用基于拉的方法的两个流行的GitOps框架的例子是[Flux](https://fluxcd.io/)和[ArgoCD](https://argo-cd.readthedocs.io/en/stable/)。ArgoCD是作为Kubernetes控制器实现的，而Flux是用GitOps工具包构建的，这是一组api和控制器，可以用来扩展Flux，甚至构建一个定制的交付平台。\
 ArgoCD架构很好地概述了GitOps是如何实现的。
 
 [ArgoCD架构，检索自ArgoCD文档](https://argo-cd.readthedocs.io/en/stable/operator-manual/architecture/)\
@@ -82,8 +82,8 @@ Kubernetes特别适合GitOps，因为它提供了一个API，并且从一开始�
 
 Learn git in a playful way
 
-* [Oh My Git! An open source game about learning Git!](https://ohmygit.org)
-* [Learn Git Branching](https://learngitbranching.js.org)
+* [Oh My Git! An open source game about learning Git!](https://ohmygit.org/)
+* [Learn Git Branching](https://learngitbranching.js.org/)
 
 Infrastructure as Code
 
