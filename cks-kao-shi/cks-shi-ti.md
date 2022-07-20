@@ -587,7 +587,7 @@ docker run --pid=host -v /etc:/etc:ro -v /var:/var:ro -t aquasec/kube-bench:late
 
 ![](../.gitbook/assets/image.png)
 
-![](<../.gitbook/assets/image (4).png>)
+![](<../.gitbook/assets/image (4) (1).png>)
 
 ![](<../.gitbook/assets/image (1).png>)
 
