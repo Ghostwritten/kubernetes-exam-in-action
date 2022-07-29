@@ -4,15 +4,12 @@
 
 参考链接：\
 [https://www.kernel.org/doc/man-pages/](https://www.kernel.org/doc/man-pages/)\
-\\
+\
+
 
 ![](https://img-blog.csdnimg.cn/20210524112657373.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![](https://img-blog.csdnimg.cn/20210524112645744.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
-
-
-
-
 
 ```
 root@master:~/imagev1.20.7# strace ls
@@ -199,15 +196,13 @@ exit_group(0)                           = ?
 
 ### 追踪 ETCD 进程 <a href="#3_strace_and_proc_on_etcd_198" id="3_strace_and_proc_on_etcd_198"></a>
 
-\\
+\
+
 
 ![](https://img-blog.csdnimg.cn/2021052411400713.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
 ![](https://img-blog.csdnimg.cn/20210524113942921.png?shadow\_10,text\_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3hpeGloYWhhbGVsZWhlaGU=,size\_16,color\_FFFFFF,t\_70)
 
-
-
-{% code title="" %}
 ```
 root@master:~/imagev1.20.7# docker ps |grep etcd
 403089c86204        0369cf4303ff           "etcd --advertise-cl…"   9 days ago          Up 9 days                               k8s_etcd_etcd-master_kube-system_77699ae6105937dbb48c0a720843ce8e_0
@@ -518,16 +513,3 @@ Node
 node2"$165aff9d-2e1b-4e7e-957a-809b3035f0cd*
 kubelet
 ```
-{% endcode %}
-
-
-
-参考：
-
-* [Linux Command strace 调试跟踪](https://smoothies.com.cn/linux-command-docs/Linux-Command/Linux\_Command\_strace.html)
-* [kubernetes cks strace etcd](https://blog.csdn.net/xixihahalelehehe/article/details/126050180)
-
-
-
-
-
